@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>video player</title>
+    <style>
+        .main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="/static/images/menu.png" class="menu-icon">
+            <img src="/static/images/logo.png" class="logo">
+    
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box">
+                <input type="text" placeholder="search">
+                <img src="/static/images/search.png" alt="">
+            </div>
+            <img src="/static/images/mic.png" class="mic-icon">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="/static/images/upload.png">
+            <img src="/static/images/bell.png" >
+            <img src="/static/images/person-1.jpeg" class="user-icon">
+        </div>
+    </nav>
+    <div class="main">
+    <section>
+       <div class="container play_container">
+        <div class="row">
+
+            <div class="play-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{data.videos}}"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+               encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            
+               
+        
+            <div class="tags">
+                <a href="#">#coding</a>
+                <a href="#">#javascript</a>
+                <a href="#">#FullStackDeveopment</a>
+                <a href="#">#HappyStudents</a>
+            </div><br>
+            
+            <div class="play-video-info">
+                <p>1M views &bull; 2days ago</p>
+                <div>
+                    <a href="#"><img src="/static/New folder/like.png">100</a>
+                    <a href="#"><img src="/static/New folder/dislike.png">100</a>
+                    <a href="#"><img src="/static/New folder/share.png">100</a>
+                    <a href="#"><img src="/static/New folder/save.png">100</a>
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+        </div>
+       </div>    
+       <div class="publisher">
+        <img src="/static/images/person-1.jpeg" alt="">
+        <div>
+        <p>Happy Students</p>
+        <span>50k Subscribers</span>
+        </div>
+    <button type="button">Subscribe</button>
+    </div>
+    <div class="vid-description">
+        <p>This is a channel focused  on building Tech video</p>
+        <p>This is to help Learners to learn easily</p>
+        <hr>
+        <h4>50 Comments</h4>
+    </div>
+    <div class="add-comment">
+        <img src="/static/images/person-2.jpeg" alt="">
+        <input type="text" placeholder="write the comments......">
+    </div>
+    <div class="old-comments">
+        <img src="/static/images/person-3.jpeg" alt="">
+        <div>
+        <h3>Gerand <span> 3days ago</span></h3>
+        <p>This is a FullStack Development.Here we are learning the project with the 
+            help of developing the clone of the web </p>
+            <div class="comment-section">
+                <img src="/static/New folder/like.png" alt="">
+                <span>300</span>
+                <img src="/static/New folder/dislike.png" alt="">
+                <span></span>
+                <span>Reply</span>
+                <a href="#">All Replies</a>
+            </div>
+    </div>
+
+        </div>
+        <div class="old-comments">
+            <img src="/static/images/person-4.jpeg" alt="">
+            <div>
+            <h3>Gerand <span> 3days ago</span></h3>
+            <p>This is a FullStack Development.Here we are learning the project with the 
+                help of developing the clone of the web </p>
+                <div class="comment-section">
+                    <img src="/static/New folder/like.png" alt="">
+                    <span>300</span>
+                    <img src="/static/New folder/dislike.png" alt="">
+                    <span></span>
+                    <span>Reply</span>
+                    <a href="#">All Replies</a>
+                </div>
+        </div>
+    
+            </div>
+            <div class="old-comments">
+                <img src="/static/images/person-5.jpeg" alt="">
+                <div>
+                <h3>Gerand <span> 3days ago</span></h3>
+                <p>This is a FullStack Development.Here we are learning the project with the 
+                    help of developing the clone of the web </p>
+                    <div class="comment-section">
+                        <img src="/static/New folder/like.png" alt="">
+                        <span>300</span>
+                        <img src="/static/New folder/dislike.png" alt="">
+                        <span></span>
+                        <span>Reply</span>
+                        <a href="#">All Replies</a>
+                    </div>
+            </div>
+        
+                </div>
+    </section>   
+    <section class="right-sidebar">
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-1.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-2.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="/static/images/thumbnail-6.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{data.description}}</h5>
+                <p>{{data.channel}}</p>
+                <p>{{data.views}}</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-10.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-11.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="/static/images/thumbnail-12.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{data.description}}</h5>
+                <p>{{data.channel}}</p>
+                <p>{{data.views}}</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-13.jpg" alt="" width="150%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <img src="/static/images/thumbnail-18.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>This is a FullStack Development Course</h5>
+                <p>Happy Students</p>
+                <p>1m views &bull; 2days ago</p>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+               <img src="/static/images/thumbnail-8.jpg" alt="" width="135%" height="100vh">
+            </div>
+            <div class="contLet">
+                <h5>{{data.description}}</h5>
+                <p>{{data.channel}}</p>
+                <p>{{data.views}}</p>
+            </div>
+        </div>
+        
+    </section>
+
+</div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
